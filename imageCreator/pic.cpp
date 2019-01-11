@@ -88,7 +88,7 @@ int main(void)
 	cin >> width;
 	cout<<"height: ";
 	cin >> height;*/
-	ofstream img ("picture.ppm");
+	ofstream img ("picture.jpg");
 	img << "P3" << endl;
 	img << width << " " << height << endl;
 	img << "255" << endl;
