@@ -1,0 +1,22 @@
+#include <iostream>
+
+struct l
+{
+  int val;
+  l *N;
+};
+
+
+int main()
+{
+  l * N = new(l);
+  N.val = 15;
+  for (int ii = 0; ii <5; ii++)
+    {
+      l * t = new(l);
+      t.val=ii;
+      t.N = N;
+      N = t
+    }
+  cout<<N.val;
+}
